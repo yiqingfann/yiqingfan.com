@@ -6,7 +6,7 @@
 
 body {
   font-family: "DM Sans";
-  @apply bg-background
+  @apply bg-black-1
 }
 
 .container {

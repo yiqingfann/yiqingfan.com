@@ -7,6 +7,9 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-postcss',
+    'gatsby-plugin-postcss', // tailwindcss
+    'gatsby-plugin-image', // image
+    'gatsby-plugin-sharp', // image
+    'gatsby-transformer-sharp', // image
   ],
 }

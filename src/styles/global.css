@@ -6,9 +6,9 @@
 
 body {
   font-family: "DM Sans";
-  @apply bg-black-1
+  @apply bg-black-2 text-white-1
 }
 
 .container {
-  @apply max-w-[90%] sm:max-w-screen-md mx-auto
+  @apply max-w-[90%] md:max-w-screen-md mx-auto
 }

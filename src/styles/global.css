@@ -10,5 +10,5 @@ body {
 }
 
 .container {
-  @apply max-w-screen-md mx-auto
+  @apply max-w-[90%] sm:max-w-screen-md mx-auto
 }

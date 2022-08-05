@@ -4,14 +4,14 @@ import { BsPencilSquare } from 'react-icons/bs';
 
 const Navbar = () => {
   return (
-    <nav className="bg-black-1 py-4 mb-5 md:mb-10">
-      <div className="flex justify-between container">
+    <nav className="bg-black-1 py-2 mb-5 md:mb-10">
+      <div className="flex justify-between items-center container">
         <div>
-          <Link to="/" className="font-bold">Yonekko</Link>
+          <Link to="/" className="font-bold clickable">Yonekko</Link>
         </div>
 
         <div>
-          <Link to="/blogs" className="flex items-center space-x-1">
+          <Link to="/blogs" className="flex items-center space-x-1 clickable">
             <BsPencilSquare />
             <span>Blogs</span>
           </Link>

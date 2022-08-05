@@ -12,3 +12,7 @@ body {
 .container {
   @apply max-w-[90%] md:max-w-screen-md mx-auto
 }
+
+.clickable {
+  @apply p-3 rounded hover:cursor-pointer hover:bg-white-4
+}

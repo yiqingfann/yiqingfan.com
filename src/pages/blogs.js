@@ -47,7 +47,7 @@ const Blogs = ({ data }) => {
               <Link
                 to={`/blogs/${blog.slug}`}
                 key={blog.id}
-                className="flex justify-between text-lg hover:bg-white-4 p-3 rounded cursor-pointer"
+                className="flex justify-between text-lg clickable"
               >
                 <span className="text-white-1">{blog.title}</span>
                 <span className="text-white-2">{blog.date.split(', ')[0]}</span>

@@ -20,43 +20,39 @@ const Blogs = ({ data }) => {
 
   return (
     <Layout>
-      <h1 className="
-        font-bold mb-4 text-white-1 text-3xl text-center
-        md:text-5xl
-      ">
+      <h1 className="page-title text-center">
         Blogs
       </h1>
 
-      <p className="
-            text-white-2 mb-4 text-xl text-center
-            md:text-2xl
-           ">
+      <p className="page-subtitle text-center mt-4">
         A place to share my thoughts.
       </p>
 
-      {years.map(year => (
-        <div key={year}>
-          <div className="px-align-clickable">
-            <div className="text-3xl text-orange-1 border-b-2 border-white-4 font-bold py-1">
-              {year}
+      {
+        years.map(year => (
+          <div key={year} className="mt-4">
+            <div className="px-align-clickable">
+              <div className="text-3xl text-orange-1 border-b-2 border-white-4 font-bold py-1">
+                {year}
+              </div>
+            </div>
+
+            <div>
+              {blogsByYear[year].map(blog => (
+                <Link
+                  to={`/blogs/${blog.slug}`}
+                  key={blog.id}
+                  className="flex justify-between text-lg clickable mt-2"
+                >
+                  <span className="text-white-1">{blog.title}</span>
+                  <span className="text-white-2">{blog.date.split(', ')[0]}</span>
+                </Link>
+              ))}
             </div>
           </div>
-
-          <div className="mb-5">
-            {blogsByYear[year].map(blog => (
-              <Link
-                to={`/blogs/${blog.slug}`}
-                key={blog.id}
-                className="flex justify-between text-lg clickable"
-              >
-                <span className="text-white-1">{blog.title}</span>
-                <span className="text-white-2">{blog.date.split(', ')[0]}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))}
-    </Layout>
+        ))
+      }
+    </Layout >
   )
 }
 

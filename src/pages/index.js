@@ -11,22 +11,13 @@ export default function Home() {
       ">
 
         <div>
-          <h1 className="
-            font-bold mb-4 text-white-1 text-3xl
-            md:text-5xl
-          ">
+          <h1 className="page-title">
             Hi, I'm Yiqing Fan.
           </h1>
-          <p className="
-            text-white-2 mb-4 text-xl
-            md:text-2xl
-           ">
+          <p className="page-subtitle mt-4">
             A software engineer who builds things to make my life easier.
           </p>
-          <p className="
-            text-white-2 text-xl
-             md:text-2xl
-          ">
+          <p className="page-subtitle mt-4">
             Welcome to my personal website!
           </p>
         </div>

@@ -20,3 +20,11 @@ body {
 .px-align-clickable {
   @apply px-3
 }
+
+.page-title {
+  @apply font-bold text-white-1 text-3xl md:text-5xl
+}
+
+.page-subtitle {
+  @apply text-white-2 text-xl md:text-2xl
+}

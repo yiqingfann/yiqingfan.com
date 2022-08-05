@@ -11,5 +11,13 @@ module.exports = {
     'gatsby-plugin-image', // image
     'gatsby-plugin-sharp', // image
     'gatsby-transformer-sharp', // image
+    'gatsby-transformer-remark', // markdown
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/blogs/`,
+      },
+    }, // files
   ],
 }

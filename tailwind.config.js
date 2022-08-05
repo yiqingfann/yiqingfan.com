@@ -12,9 +12,14 @@ module.exports = {
           2: '#282c34',
         }, // background
         white: {
-          1: '#eeeeee',
-          2: '#b3b9c5',
+          1: '#eeeeee', // important text
+          2: '#b3b9c5', // less important text
+          3: '#4b5056', // split line color
+          4: '#3a3e42'
         },
+        orange: {
+          '1': '#fbb749',
+        }
       },
       fontFamily: {
         // body: ["DM Sans"],

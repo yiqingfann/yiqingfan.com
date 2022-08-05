@@ -16,3 +16,7 @@ body {
 .clickable {
   @apply p-3 rounded hover:cursor-pointer hover:bg-white-4
 }
+
+.px-align-clickable {
+  @apply px-3
+}

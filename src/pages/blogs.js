@@ -36,7 +36,7 @@ const Blogs = ({ data }) => {
 
       {years.map(year => (
         <div key={year}>
-          <div className="p-3">
+          <div className="px-align-clickable">
             <div className="text-3xl text-orange-1 border-b-2 border-white-4 font-bold py-1">
               {year}
             </div>

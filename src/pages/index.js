@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="
-        flex flex-col space-y-5
+        flex flex-col space-y-5 px-align-clickable
         md:flex-row md:items-center md:space-x-20 md:space-y-0
       ">
 

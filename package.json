@@ -14,9 +14,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.4",
     "gatsby": "^4.19.2",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
+    "gatsby-remark-classes": "^1.0.2",
     "gatsby-source-filesystem": "^4.20.0",
     "gatsby-transformer-remark": "^5.20.0",
     "gatsby-transformer-sharp": "^4.20.0",

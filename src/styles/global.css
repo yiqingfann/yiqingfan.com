@@ -28,3 +28,15 @@ body {
 .page-subtitle {
   @apply text-white-2 text-xl md:text-2xl
 }
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  @apply text-orange-1
+}
+
+/* .markdown p, .markdown strong, .markdown li, .markdown code, .markdown table {
+  @apply text-white-1
+} */
+
+.markdown, .markdown strong {
+  @apply text-white-1
+}

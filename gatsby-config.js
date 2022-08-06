@@ -11,21 +11,15 @@ module.exports = {
     'gatsby-plugin-image', // image
     'gatsby-plugin-sharp', // image
     'gatsby-transformer-sharp', // image
-    // 'gatsby-transformer-remark', // markdown
-    { // markdown styles
-      resolve: `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`, // markdown meta info
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-classes`,
+            resolve: `gatsby-remark-classes`, // markdown styles
             options: {
               classMap: {
                 // "heading[depth=1]": "text-orange-1",
-                // "heading[depth=2]": "text-orange-1",
-                // "heading[depth=3]": "text-orange-1",
-                // "heading[depth=4]": "text-orange-1",
-                // "heading[depth=5]": "text-orange-1",
-                // "heading[depth=6]": "text-orange-1",
                 // "paragraph": "text-white-1"
               }
             }
@@ -34,11 +28,11 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`, // files
       options: {
         name: `blogs`,
         path: `${__dirname}/src/blogs/`,
       },
-    }, // files
+    },
   ],
 }

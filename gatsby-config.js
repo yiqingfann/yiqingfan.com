@@ -26,7 +26,13 @@ module.exports = {
                 // "paragraph": "text-white-1"
               }
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-images`, // makrdown images
+            options: {
+              // maxWidth: 590,
+            },
+          },
         ]
       }
     },

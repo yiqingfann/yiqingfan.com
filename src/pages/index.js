@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 // markdown code block styles
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
@@ -10,7 +10,7 @@ deckDeckGoHighlightElement();
 export default function Home() {
   return (
     <>
-      <SEO title="Yiqing Fan" />
+      <Seo title="Yiqing Fan" />
       <Layout>
         <div className="
         flex flex-col space-y-5 px-align-clickable

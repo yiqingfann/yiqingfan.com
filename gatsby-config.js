@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `Yiqing Fan`,
     description: `Yiqing Fan's personal website`,
-    siteUrl: `www.yiqingfan.com`,
+    // siteUrl: `www.yiqingfan.com`,
   },
   plugins: [
     'gatsby-plugin-postcss', // tailwindcss

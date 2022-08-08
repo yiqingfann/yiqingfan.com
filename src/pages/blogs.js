@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 const Blogs = ({ data }) => {
   const blogs = data.allMarkdownRemark.nodes
@@ -21,7 +21,7 @@ const Blogs = ({ data }) => {
 
   return (
     <>
-      <SEO title="Blogs | Yiqing Fan" />
+      <Seo title="Blogs | Yiqing Fan" />
 
       <Layout>
         <h1 className="page-title text-center">

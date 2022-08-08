@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-black-1 py-2 mb-5 md:mb-10">
       <div className="flex justify-between items-center container">
         <div>
-          <Link to="/" className="font-bold clickable">Yonekko</Link>
+          <Link to="/" className="font-bold clickable">Yiqing Fan</Link>
         </div>
 
         <div>

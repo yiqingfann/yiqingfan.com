@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const BlogDetails = ({ data }) => {
   console.log(data)
@@ -8,15 +9,18 @@ const BlogDetails = ({ data }) => {
   const { html } = data.markdownRemark
 
   return (
-    <Layout>
-      <div>
-        <h1 className="page-title text-center">{title}</h1>
-        <div className="page-subtitle text-center mt-4">{date}</div>
+    <>
+      <SEO title={`${title} | Yiqing Fan`} />
+      <Layout>
+        <div>
+          <h1 className="page-title text-center">{title}</h1>
+          <div className="page-subtitle text-center mt-4">{date}</div>
 
-        {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-        <div dangerouslySetInnerHTML={{ __html: html }} className="prose markdown mt-4" />
-      </div>
-    </Layout>
+          {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+          <div dangerouslySetInnerHTML={{ __html: html }} className="prose markdown mt-4" />
+        </div>
+      </Layout>
+    </>
   )
 }
 

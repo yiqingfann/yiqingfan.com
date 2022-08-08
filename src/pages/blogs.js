@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
+import SEO from '../components/SEO';
 
 const Blogs = ({ data }) => {
   const blogs = data.allMarkdownRemark.nodes
@@ -19,40 +20,44 @@ const Blogs = ({ data }) => {
   console.log(years)
 
   return (
-    <Layout>
-      <h1 className="page-title text-center">
-        Blogs
-      </h1>
+    <>
+      <SEO title="Blogs | Yiqing Fan" />
 
-      <p className="page-subtitle text-center mt-4">
-        A place to share my thoughts.
-      </p>
+      <Layout>
+        <h1 className="page-title text-center">
+          Blogs
+        </h1>
 
-      {
-        years.map(year => (
-          <div key={year} className="mt-4">
-            <div className="px-align-clickable">
-              <div className="text-3xl text-orange-1 border-b-2 border-white-4 font-bold py-1">
-                {year}
+        <p className="page-subtitle text-center mt-4">
+          A place to share my thoughts.
+        </p>
+
+        {
+          years.map(year => (
+            <div key={year} className="mt-4">
+              <div className="px-align-clickable">
+                <div className="text-3xl text-orange-1 border-b-2 border-white-4 font-bold py-1">
+                  {year}
+                </div>
+              </div>
+
+              <div>
+                {blogsByYear[year].map(blog => (
+                  <Link
+                    to={`/blogs/${blog.slug}`}
+                    key={blog.id}
+                    className="flex justify-between text-lg clickable mt-2"
+                  >
+                    <span className="text-white-1">{blog.title}</span>
+                    <span className="text-white-2">{blog.date.split(', ')[0]}</span>
+                  </Link>
+                ))}
               </div>
             </div>
-
-            <div>
-              {blogsByYear[year].map(blog => (
-                <Link
-                  to={`/blogs/${blog.slug}`}
-                  key={blog.id}
-                  className="flex justify-between text-lg clickable mt-2"
-                >
-                  <span className="text-white-1">{blog.title}</span>
-                  <span className="text-white-2">{blog.date.split(', ')[0]}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        ))
-      }
-    </Layout >
+          ))
+        }
+      </Layout >
+    </>
   )
 }
 

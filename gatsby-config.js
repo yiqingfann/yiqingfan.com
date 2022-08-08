@@ -16,6 +16,9 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-highlight-code`, // markdown code block styles
+          },
+          {
             resolve: `gatsby-remark-classes`, // markdown styles
             options: {
               classMap: {

@@ -29,20 +29,18 @@ body {
   @apply text-white-2 text-xl md:text-2xl
 }
 
+/* --------------------markdown-------------------- */
+
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
   @apply text-orange-1
 }
-
-/* .markdown p, .markdown strong, .markdown li, .markdown code, .markdown table {
-  @apply text-white-1
-} */
 
 .markdown, .markdown strong, .markdown blockquote, .markdown th {
   @apply text-white-1
 }
 
 .markdown code {
-  @apply text-pink-500
+  @apply text-pink-400
 }
 
 .markdown code::before, .markdown code::after {
@@ -54,5 +52,10 @@ body {
 }
 
 .markdown li::marker {
-  @apply text-pink-500
+  @apply text-orange-1
+}
+
+/* for blockquote to remove "" */
+.markdown p::before, .markdown p::after {
+  content: "";
 }

@@ -2,6 +2,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Layout from '../components/Layout';
 
+// markdown code block styles
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
+
 export default function Home() {
   return (
     <Layout>

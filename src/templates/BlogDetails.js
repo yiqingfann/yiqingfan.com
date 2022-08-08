@@ -14,7 +14,7 @@ const BlogDetails = ({ data }) => {
         <div className="page-subtitle text-center mt-4">{date}</div>
 
         {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-        <div dangerouslySetInnerHTML={{ __html: html }} className="prose markdown" />
+        <div dangerouslySetInnerHTML={{ __html: html }} className="prose markdown mt-4" />
       </div>
     </Layout>
   )

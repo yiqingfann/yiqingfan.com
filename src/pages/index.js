@@ -22,10 +22,10 @@ export default function Home() {
               Hi, I'm Yiqing Fan.
             </h1>
             <p className="page-subtitle mt-4">
-              A software engineer who builds things to make my life easier.
+              A software engineer who turns ideas into products that solve people's pain points.
             </p>
             <p className="page-subtitle mt-4">
-              Welcome to my personal website!
+              Have fun and make impact!
             </p>
           </div>
 

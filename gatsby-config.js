@@ -12,14 +12,15 @@ module.exports = {
     // siteUrl: `www.yiqingfan.com`,
   },
   plugins: [
-    'gatsby-plugin-postcss', // tailwindcss
-    'gatsby-plugin-image', // image
-    'gatsby-plugin-sharp', // image
-    'gatsby-transformer-sharp', // image
+    "gatsby-plugin-postcss", // tailwindcss
+    "gatsby-plugin-image", // image
+    "gatsby-plugin-sharp", // image
+    "gatsby-transformer-sharp", // image
     {
       resolve: `gatsby-transformer-remark`, // markdown meta info
       options: {
         plugins: [
+          "gatsby-remark-copy-linked-files",
           {
             resolve: `gatsby-remark-highlight-code`, // markdown code block styles
           },
@@ -29,8 +30,8 @@ module.exports = {
               classMap: {
                 // "heading[depth=1]": "text-orange-1",
                 // "paragraph": "text-white-1"
-              }
-            }
+              },
+            },
           },
           {
             resolve: `gatsby-remark-images`, // makrdown images
@@ -38,8 +39,8 @@ module.exports = {
               maxWidth: 768,
             },
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`, // files

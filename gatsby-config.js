@@ -22,6 +22,13 @@ module.exports = {
         plugins: [
           "gatsby-remark-copy-linked-files",
           {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: "_blank",
+              rel: "noopener noreferrer",
+            },
+          },
+          {
             resolve: `gatsby-remark-highlight-code`, // markdown code block styles
           },
           {

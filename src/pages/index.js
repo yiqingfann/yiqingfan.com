@@ -15,17 +15,17 @@ export default function Home() {
         <div
           className="
             flex flex-col space-y-5 px-align-clickable
-            md:flex-row md:items-center md:space-x-20 md:space-y-0
+            md:flex-row md:items-center md:space-x-8 md:space-y-0
           "
         >
           <div>
-            <h1 className="page-title">Hi, I'm Yiqing Fan.</h1>
+            <h1 className="page-title">Hi, I'm Yiqing Fan 👋</h1>
             <p className="page-subtitle mt-4">
-              I solve problems and make things happen =v=.
+              I solve problems and make things happen =v=
             </p>
             <p className="page-subtitle mt-4">
-              Using full-stack web development and AI models to solve people's
-              pain points. Have fun and make impact!
+              I enjoy using full-stack web development and AI models to solve
+              people's pain points. Have fun and make impact!
             </p>
           </div>
 

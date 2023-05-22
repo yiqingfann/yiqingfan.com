@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import { AiFillGithub } from "react-icons/ai"
-import { GrGatsbyjs } from "react-icons/gr"
-import { SiNetlify } from "react-icons/si"
 
 const Footer = () => {
   const links = [

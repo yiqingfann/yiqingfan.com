@@ -15,7 +15,11 @@ const Footer = () => {
     <footer className="flex flex-col items-center py-5">
       <div className="flex">
         {links.map(link => (
-          <Link to={link.url} className="flex items-center space-x-1 clickable">
+          <Link
+            to={link.url}
+            target="_blank"
+            className="flex items-center space-x-1 clickable"
+          >
             <div>{link.icon}</div>
             <div>{link.label}</div>
           </Link>
